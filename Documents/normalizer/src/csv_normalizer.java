@@ -8,17 +8,19 @@ public class csv_normalizer {
         File file = new File(fileName);
         try {
             Scanner inputStream = new Scanner(file);
+            FileWriter writer = new FileWriter("src/new.csv");
             while (inputStream.hasNext()) {
                 String data = inputStream.nextLine();
-               // data.split(",");
-                System.out.println(data);
+                writer.append(data);
             }
             inputStream.close();
+            writer.close();
         }
 
         catch(FileNotFoundException e){
             e.printStackTrace();
         }
     }
+
 }
 
