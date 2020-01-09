@@ -1,10 +1,16 @@
+# My comments
+
+To test the code in terminal:
+
+java csv_normalizer sample.csv new.csv
+
+
+
 # Read & Write CSV file
 
 
-The problem: CSV normalization
 Please write a tool that reads a CSV formatted file on stdin and emits a normalized CSV formatted file on stdout. For example, if your program was named normalizer we would test your code on the command line like this:
 
-./normalizer < sample.csv > output.csv
 Normalized, in this case, means:
 
 The entire CSV is in the UTF-8 character set.
